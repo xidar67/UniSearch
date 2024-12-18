@@ -36,7 +36,7 @@ p{
 
 .navbar .name {
     font-size: 48px;
-    text-align: center;
+    padding-left: 26%;
     color: white;
     font-weight: bold;
     font-family: Newsreader;/*font titoli*/

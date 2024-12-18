@@ -92,35 +92,9 @@ p{
     color: #000;
 }
 
-/*Stiile ingegneria*/
-.ingegneria{
-    max-width: 600px;
-    padding-top: 20px;
-    margin-left: 15%;
-    text-align: left;
-    float: left;
+.facolta{
+    padding:  4%;
 }
-
-/*Stile architettura*/
-.architettura{
-    max-width: 600px;
-    text-align: right;
-    margin-left: 50%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-
-}
-
-.design{
-    max-width: 600px;
-    padding-top: 40px;
-    margin-left: 15%;
-    text-align: left;
-    float: left;
-}
-
-
 
 /* Header/Barra blu */
 .top-bar {

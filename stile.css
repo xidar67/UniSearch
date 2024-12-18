@@ -121,7 +121,7 @@ hr {
 
 .navbar .name {
    font-size: 48px;
-   padding-left: 26%;
+   text-align: center;
    color: white;
    font-weight: bold;
    font-family: Newsreader;/*font titoli*/

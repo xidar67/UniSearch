@@ -1,0 +1,274 @@
+
+/* Header/Barra blu */
+.top-bar {
+   background-color: #374E89; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 50px 20px;
+   margin-top: 80px;
+}
+
+/* Logo */
+.logo {
+   font-size: 48px;
+   font-weight: bold;
+   color: #FFF;
+}
+
+.logo span {
+   background-color: #000;
+   color: #FFF;
+   padding: 2px 5px;
+}
+
+/* Testo centrale */
+.central-text {
+   display: inline-block; /* Adatta alle dimensioni del contenuto */
+   font-size: 32px; /* Dimensione del font */
+   font-weight: bold; /* Testo in grassetto */
+   color: #000; /* Testo nero */
+   background-color: #FFF; /* Sfondo bianco */
+   padding: 5px 10px; /* Spaziatura interna */
+   position: relative; /* Permette l'ombra di muoversi */
+   z-index: 2; /* Metti il testo in primo piano */
+   box-shadow: 5px 5px 0px #000; /* Ombra offset nera */
+   transform: rotate(-2deg); /* Leggera inclinazione */
+}
+
+/* Icone social */
+.social-icons a {
+   text-decoration: none;
+   margin: 0 5px;
+}
+
+.social-icons img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+/* Contenuto footer */
+.footer-content {
+   padding: 20px;
+   line-height: 1.6;
+}
+
+.footer-content a {
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+   margin: 0 10px;
+}
+
+.footer-content a:hover {
+   text-decoration: underline;
+}
+
+/* Linea separatrice */
+hr {
+   margin: 20px auto;
+   width: 80%;
+   border: none;
+   border-top: 1px solid #ddd;
+}
+
+
+
+/* RISULTATO */
+
+.risultato{
+   font-size: 200%;
+}
+
+.risultato button {
+   width: 20%;
+   height: 70px;
+   font-size: 110%;
+}
+
+
+
+/* ChatUni */
+
+#chat {
+   width: 100%; 
+   height: 300px; 
+   resize: none; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 12px;
+}
+
+
+
+
+
+/* Navbar */
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #374E89;
+   padding: 30px 20px;
+   
+}
+
+.navbar .logo img {
+   height: 40px;
+}
+
+.navbar .name {
+   font-size: 48px;
+   padding-left: 26%;
+   color: white;
+   font-weight: bold;
+   font-family: Newsreader;/*font titoli*/
+}
+
+.navbar .menu ul {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   font-size: 32px;
+   font-family: Instrument Sans;/*Font testi */
+}
+
+.navbar .menu ul li {
+   margin-left: 20px;
+}
+
+.navbar .menu ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Stile del QUIZ */
+
+
+#quiz{
+   background-color: #9AA6B2;
+   border: solid black 2px; 
+}
+
+#questions{
+   font-size: 130%;
+}
+
+.opzione{
+   padding: 2%;
+   font-size: 150%;
+   width: 80%;
+   border: solid black 2px;
+   margin-bottom: 3%;
+   margin-left: 10%;
+   text-align: center;
+}
+
+
+
+
+
+
+/* Stile Università */
+
+
+body{
+   background-color: #D9EAFD;
+}
+
+
+
+.caption {
+   font-family: Verdana, sans-serif;
+   font-size: 10px;
+
+   margin: 0;
+   padding: 0;
+   position: relative;
+   overflow: hidden;
+   transition: 0.3s;
+}
+.caption img {
+
+   margin: 0;
+   padding: 0;
+   background: #000000;
+   border: solid;
+   border-color: rgb(0, 0, 0);
+   width:95%;
+   
+}
+.caption span {
+
+   margin: 0;
+   padding: 10px;
+   width: 95%;
+   color: #dedede;
+   background: rgba(0, 0, 0, 0.616);
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+.caption span strong {
+   font-weight: bold;
+   font-size: 20px;
+   text-transform: uppercase;
+   display: block;
+   padding-bottom: 5px;
+}
+
+.caption:hover{
+      transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+  
+   .caption img {
+      margin: 5%;
+      background: #000000;
+      border: solid;
+      border-color: rgb(0, 0, 0);
+      width:90%;
+
+   }
+
+   .caption span {
+      float: left;
+      margin: 5%;
+      padding: 10px;
+      width: 90%;
+      color: #dedede;
+      background: rgba(0, 0, 0, 0.616);
+      position: absolute;
+      font-weight: bold;
+      font-size: larger;
+      text-transform: uppercase;
+      display: block;
+      padding-bottom: 5px;
+   }
+
+}
+.citta{
+   background-color: #84a2ee;
+   padding: 4%;
+}
+
+#testo{
+   background-color: rgba(0, 0, 0, 0.897);
+   
+}
+
+

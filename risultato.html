@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="stile.css" rel="stylesheet">
+    <title>Risultato - UniSearch</title>
+    
+    <style>
+
+        body{
+        background-color: #D9EAFD;
+        }
+
+        button{
+
+        border-radius: 8px;
+        transition: 0.3s;
+        font-family: Newsreader;
+        font-size: 200%;
+        width: 20%;
+        color: white;
+        background-color: rgb(13, 110, 253);
+        }
+
+        button:hover{
+            transform: scale(1.05);
+        }
+
+</style>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="Home.html"><img src="Immagini/UniSearch.png" alt="Logo"></a>
+        </div>
+        <div class="name">UniSearch</div>
+        <div class="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Universita.html">Università</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="ChatUni.html">ChatUni</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+<div style="background-image: url(Immagini/backgroundFacolta.jpg);
+background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+background-size:contain;
+background-attachment: fixed;
+padding-top: 10%; padding-bottom: 10%;">
+
+<div class="container-sm" style="background-color: rgba(0, 0, 0, 0.562); color: white; text-align: center; padding: 3%; border: 3px black solid; font-size: 200%; font-weight: bold;">
+    <h1>Il tuo percorso ideale è:</h1>
+    <p id="facolta" style="font-size: 160%;"></p>
+</div>
+
+</div>
+<div style="background-color: #D9EAFD;" class="risultato">
+    <h2 style="background-color: #D9EAFD; text-align: center; padding-top:  3%; font-weight: bold;">VUOI SAPERE COME ABBIAMO OTTENUTO QUESTO RISULTATO? <br></h2>
+    <p style="padding: 4%; font-weight: bold;">Leggi qui sotto:</p>
+    <p style="padding: 1% 4%;">Tramite le risposte che ci hai fornito abbiamo affidato un punteggio a determinate categorie, il nostro algoritmo ha stabilito, grazie all'insieme dei punteggi, che questa è la facoltà migliore per te.<br>
+        Ovviamente tu non sei costretto a scegliere questa facoltà, questa è soltanto un'indicazione in base alle informazioni che hai fornito. Se non sei contento del risultato ottenuto o vuoi un ulteriore parere puoi usufruire del nostro 
+        chatbot per avere.
+        <br><br>
+        Vuoi usufruire del chatbot?
+    </p>
+    <div style="padding: 0% 5% 10%;">
+        <a href="ChatUni.html"><button>Clicca qui!</button></a>
+    </div>
+</div>
+
+    <script>
+        // Recupera il parametro 'facolta' dall'URL
+        const params = new URLSearchParams(window.location.search);
+        const facoltaIndex = params.get("facolta");
+
+        // Mappa delle facoltà
+        const facoltaNomi = [
+            "Ingegneria Informatica",
+            "Architettura",
+            "Design",
+            "Scienze Umane e Sociali",
+            "Scienze Economiche e Giuridiche",
+            "Ingegneria",
+            "Medicina e Professioni Sanitarie",
+            "Scienze della Formazione",
+            "Ingegneria",
+            "Medicina e Professioni Sanitarie",
+            "Economia e Giurisprudenza",
+            "Scienze Umane e Sociali",
+            "Scienze economiche e statistiche",
+            "Scienze politiche e sociali"
+        ];
+
+        // Mostra il risultato basato sull'indice
+        document.getElementById("facolta").innerText = facoltaNomi[facoltaIndex - 1] || "Facoltà non trovata";
+    </script>
+</body>
+
+<footer>
+    <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo">
+            UniSearch
+        </div>
+        <!-- Testo Centrale -->
+        <div class="central-text">
+            Iniziate oggi il vostro viaggio.
+        </div>
+        <!-- Icone Social -->
+        <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/30/007BFF/ffffff?text=F" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/1DB954/ffffff?text=S" alt="Spotify"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/FF0000/ffffff?text=Y" alt="YouTube"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/E1306C/ffffff?text=I" alt="Instagram"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/000000/ffffff?text=TT" alt="TikTok"></a>
+        </div>
+    </div>
+</footer>
+</html>

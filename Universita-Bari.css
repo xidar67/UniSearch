@@ -1,0 +1,197 @@
+/* Stile generale */
+body {    
+    font-family: Instrument Sans;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h2{
+    font-size: 36px;
+    font-family: Newsreader;
+    font-weight: bold;
+}
+
+p{
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: Instrument Sans;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #374E89;
+    padding: 30px 20px;
+    
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar .name {
+    font-size: 48px;
+    padding-left: 26%;
+    color: white;
+    font-weight: bold;
+    font-family: Newsreader;/*font titoli*/
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-family: Instrument Sans;/*Font testi */
+}
+
+.navbar .menu ul li {
+    margin-left: 20px;
+}
+
+.navbar .menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*css UNIVERSITA-Bari*/
+
+/*Titolo */
+.bari{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    font-size: 64px;
+    font-family: Newsreader;
+    font-weight: bold;
+}
+
+/* Sezione Presentazione */
+.politecnico h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 48px;
+}
+
+/*Sezione contenuti*/
+.facolta-politecnico{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #000;
+}
+
+/*Stiile ingegneria*/
+.ingegneria{
+    max-width: 600px;
+    padding-top: 20px;
+    margin-left: 15%;
+    text-align: left;
+    float: left;
+}
+
+/*Stile architettura*/
+.architettura{
+    max-width: 600px;
+    text-align: right;
+    margin-left: 50%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.design{
+    max-width: 600px;
+    padding-top: 40px;
+    margin-left: 15%;
+    text-align: left;
+    float: left;
+}
+
+
+
+/* Header/Barra blu */
+.top-bar {
+    background-color: #374E89; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+ }
+ 
+ /* Logo */
+ .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFF;
+ }
+ 
+ .logo span {
+    background-color: #000;
+    color: #FFF;
+    padding: 2px 5px;
+ }
+ 
+ /* Testo centrale */
+ .central-text {
+    display: inline-block; /* Adatta alle dimensioni del contenuto */
+    font-size: 32px; /* Dimensione del font */
+    font-weight: bold; /* Testo in grassetto */
+    color: #000; /* Testo nero */
+    background-color: #FFF; /* Sfondo bianco */
+    padding: 5px 10px; /* Spaziatura interna */
+    position: relative; /* Permette l'ombra di muoversi */
+    z-index: 2; /* Metti il testo in primo piano */
+    box-shadow: 5px 5px 0px #000; /* Ombra offset nera */
+    transform: rotate(-2deg); /* Leggera inclinazione */
+ }
+ 
+ /* Icone social */
+ .social-icons a {
+    text-decoration: none;
+    margin: 0 5px;
+ }
+ 
+ .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
+ 
+ /* Contenuto footer */
+ .footer-content {
+    padding: 20px;
+    line-height: 1.6;
+ }
+ 
+ .footer-content a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+ }
+ 
+ .footer-content a:hover {
+    text-decoration: underline;
+ }
+ 
+ /* Linea separatrice */
+ hr {
+    margin: 20px auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid #ddd;
+ }

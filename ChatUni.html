@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="stile.css" rel="stylesheet">
+    <title>ChatUni - UniSearch</title>
+    
+    <style>
+
+    button{
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+    font-family: Newsreader;
+    font-size: 200%;
+    width: 20%;
+    padding: 1% 4%;
+    color: white;
+    background-color: rgb(13, 110, 253);
+    }
+
+    button:hover{
+        transform: scale(1.05);
+    }
+</style>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="Home.html"><img src="Immagini/UniSearch.png" alt="Logo"></a>
+        </div>
+        <div class="name">UniSearch</div>
+        <div class="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Universita.html">Università</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="ChatUni.html">ChatUni</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div style="background-image: url(Immagini/ChatUni.jpg);
+background-repeat: no-repeat; 
+background-size:contain;
+background-attachment: fixed;
+padding-top: 10%; padding-bottom: 10%;">
+
+    <div class="container-sm" style="font-size: 300%; font-weight: bold; color: white; text-align: center; font-family: 'Times New Roman', Times, serif; ">
+        <h1 style="font-size: 300%; font-weight: bold;">ChatUni</h1>
+    </div>
+
+</div>
+
+<p style="font-weight:500 ; font-size: 400%; text-align: center;">Non sei sicuro del risultato?<br>
+Chiedi aiuto al tuo amico ChatUni!!
+</p>
+<div class="container-xl">
+
+    <textarea id="chat" placeholder="Scrivi qui cosa non ti convince" size="400"></textarea>
+    <button style="margin-left: 40% ;" id="chatButton">Chiedi!</button>
+
+
+</div>
+
+</body>
+
+<footer>
+    <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo">
+            UniSearch
+        </div>
+        <!-- Testo Centrale -->
+        <div class="central-text">
+            Iniziate oggi il vostro viaggio.
+        </div> 
+        <!-- Icone Social -->
+        <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/30/007BFF/ffffff?text=F" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/1DB954/ffffff?text=S" alt="Spotify"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/FF0000/ffffff?text=Y" alt="YouTube"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/E1306C/ffffff?text=I" alt="Instagram"></a>
+            <a href="#"><img src="https://via.placeholder.com/30/000000/ffffff?text=TT" alt="TikTok"></a>
+        </div>
+    </div>
+</footer>
+</html>

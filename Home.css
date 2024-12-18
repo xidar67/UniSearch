@@ -1,0 +1,324 @@
+/* Stile generale */
+body {    
+    font-family: Instrument Sans;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h2{
+    font-size: 36px;
+    font-family: Newsreader;
+    font-weight: bold;
+}
+
+p{
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: Instrument Sans;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #374E89;
+    padding: 30px 20px;
+    
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar .name {
+    font-size: 48px;
+    padding-left: 26%;
+    color: white;
+    font-weight: bold;
+    font-family: Newsreader;/*font titoli*/
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-family: Instrument Sans;/*Font testi */
+}
+
+.navbar .menu ul li {
+    margin-left: 20px;
+}
+
+.navbar .menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sezione Presentazione */
+.presentazione {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    font-size: 40px;
+    font-family: Newsreader;
+    font-weight: bold;
+}
+
+.sotto-testo{
+    font-size: 24px;
+}
+
+/* Sezioni di contenuto */
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #374E89;
+    color: #FFF;
+}
+
+/*classe: "chi siamo?"*/
+.who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.text-block-outSide{
+    max-width: 600px;
+    text-align: center;
+
+}
+
+/* classe della funzione di Unisearch*/
+.text-block-funzioneUnisearch{
+    max-width: 500px;
+    padding-top: 60px;
+    margin-left: 15%;
+    text-align: center;
+    float: left;
+    color: #FFF;
+}
+
+button{
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+    font-family: Newsreader;
+    font-size: 18px;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+.image-block-right {
+   padding-left: 65%;
+
+}
+
+/* classe della missione di UniSearch*/
+.text-block-mission{
+    max-width: 600px;
+    text-align: center;
+    margin-left: 60%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.image-block-left {
+    margin-top: -25%;
+    padding-bottom: -20%;
+    margin-left: 20%;
+
+}
+
+.image-block img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #374E89;
+    color: white;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 40px;
+}
+
+
+/* Blog Section */
+.blog-section {
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    transition: 3s;
+    margin-bottom: 0; /* Rimuove lo spazio extra inferiore */
+    padding-bottom: 80px; /* Riduce lo spazio inferiore interno */
+}
+
+.blog-section h2 {
+    color: #374E89;
+    margin-bottom: 10px; /* Riduce lo spazio sotto l'intestazione */
+}
+
+.linea{
+    border: 1px solid #26365d;
+    width: 250px;
+}
+
+.news-p {
+    padding: 10px; /* Riduce il padding verticale */
+    margin-bottom: 10px; /* Riduce lo spazio inferiore */
+}
+
+.blog-post img{
+    width: 100%;
+    height: auto;
+
+}
+
+.blog-marquee {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    white-space: wrap; /* Evita il wrapping */
+    margin-bottom: 0; /* Elimina lo spazio inferiore */
+}
+
+.blog-post {
+    display: inline-block;
+    padding: 0 5px;
+    margin-right: 20px;
+    text-align: left;
+    min-width: 300px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #26365d;
+    margin-bottom: 0; /* Rimuove spazio sotto i post */
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.fade-out {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Ridotto l'altezza dell'effetto dissolvenza */
+    background: linear-gradient(to top, #f4f4f4, transparent);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Animazione scorrevole */
+@keyframes scroll {
+    0% {
+        transform: translateX(10%);
+    }
+    80% {
+        transform: translateX(-40%);
+    }
+}
+/* Header/Barra blu */
+.top-bar {
+    background-color: #374E89; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+ }
+ 
+ /* Logo */
+ .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFF;
+ }
+ 
+ .logo span {
+    background-color: #000;
+    color: #FFF;
+    padding: 2px 5px;
+ }
+ 
+ /* Testo centrale */
+ .central-text {
+    display: inline-block; /* Adatta alle dimensioni del contenuto */
+    font-size: 32px; /* Dimensione del font */
+    font-weight: bold; /* Testo in grassetto */
+    color: #000; /* Testo nero */
+    background-color: #FFF; /* Sfondo bianco */
+    padding: 5px 10px; /* Spaziatura interna */
+    position: relative; /* Permette l'ombra di muoversi */
+    z-index: 2; /* Metti il testo in primo piano */
+    box-shadow: 5px 5px 0px #000; /* Ombra offset nera */
+    transform: rotate(-2deg); /* Leggera inclinazione */
+ }
+ 
+ /* Icone social */
+ .social-icons a {
+    text-decoration: none;
+    margin: 0 5px;
+ }
+ 
+ .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
+ 
+ /* Contenuto footer */
+ .footer-content {
+    padding: 20px;
+    line-height: 1.6;
+ }
+ 
+ .footer-content a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+ }
+ 
+ .footer-content a:hover {
+    text-decoration: underline;
+ }
+ 
+ /* Linea separatrice */
+ hr {
+    margin: 20px auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid #ddd;
+ }
+

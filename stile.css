@@ -1,3 +1,102 @@
+/* Stile generale */
+body {    
+   font-family: Instrument Sans;
+   margin: 0;
+   padding: 0;
+   background-color: #ffffff;
+   color: #000000;
+}
+
+h2{
+   font-size: 36px;
+   font-family: Newsreader;
+   font-weight: bold;
+}
+
+p{
+   font-size: 21px;
+   line-height: 1.5;
+   margin-bottom: 30px;
+   font-family: Instrument Sans;
+}
+/* Navbar */
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #374E89;
+   padding: 20px 20px;
+   
+}
+
+.navbar .logo img {
+   height: 40px;
+}
+
+.navbar .name {
+   font-size: 370%;
+   padding-left: 28%;
+   color: white;
+   font-weight: bold;
+   font-family: Newsreader;/*font titoli*/
+}
+
+.navbar .menu ul {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   font-size: 32px;
+   font-family: Instrument Sans;/*Font testi */
+}
+
+.navbar .menu ul li {
+   margin-left: 20px;
+}
+
+.navbar .menu ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+/* Sezione Presentazione */
+.container-sm {
+   color: white;
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   font-weight: bold;
+}
+
+.container{
+   color: white;
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 3%;
+   font-weight: bold;
+}
+
+.title-max{
+   font-family: serif;
+   font-size: 500%;
+   padding: 3%;
+   margin-top: -5%;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+}
+
+.title {
+   font-family: serif;
+   font-size: 600%;
+   padding: 3%;
+   margin-top: -3%;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+}
+
+
 
 /* Header/Barra blu */
 .top-bar {
@@ -105,46 +204,6 @@ hr {
 
 
 
-/* Navbar */
-.navbar {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   background-color: #374E89;
-   padding: 30px 20px;
-   
-}
-
-.navbar .logo img {
-   height: 40px;
-}
-
-.navbar .name {
-   font-size: 370%;
-   padding-left: 26%;
-   color: white;
-   font-weight: bold;
-   font-family: Newsreader;/*font titoli*/
-}
-
-.navbar .menu ul {
-   list-style: none;
-   display: flex;
-   margin: 0;
-   padding: 0;
-   font-size: 32px;
-   font-family: Instrument Sans;/*Font testi */
-}
-
-.navbar .menu ul li {
-   margin-left: 20px;
-}
-
-.navbar .menu ul li a {
-   color: white;
-   text-decoration: none;
-}
-
 
 
 
@@ -157,6 +216,7 @@ hr {
 
 #quiz{
    background-color: #9AA6B2;
+   width: 69%;
    border: solid black 2px; 
 }
 
@@ -167,11 +227,20 @@ hr {
 .opzione{
    padding: 2%;
    font-size: 150%;
-   width: 80%;
+   width: 60%;
    border: solid black 2px;
    margin-bottom: 3%;
-   margin-left: 10%;
+   margin-left: 5%;
    text-align: center;
+}
+
+.container-xxl{
+   color: white;
+   text-align: center;
+   align-items: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   font-weight: bold;
 }
 
 
@@ -212,6 +281,7 @@ body{
 
    margin: 0;
    padding: 10px;
+   margin-left: 2%;
    width: 95%;
    color: #dedede;
    background: rgba(0, 0, 0, 0.616);

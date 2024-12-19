@@ -76,7 +76,7 @@ p{
 }
 
 /* Sezione Presentazione */
-.politecnico h2{
+.Nome-universita h2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,8 +92,20 @@ p{
     color: #000;
 }
 
-.facolta{
-    padding:  4%;
+.row{
+    align-items: right;
+    padding: 60px;
+    margin: 60px;
+    font-size: 48px;
+
+}
+
+.col-sm img{
+    padding-left: 10%;
+    width: 90%;
+    height: auto;
+    margin-top: -5%;
+
 }
 
 
